@@ -25,7 +25,7 @@
 
     - Primary: #e67e22;
     - Tints: #fdf2e9;#fae5d3
-    - Shades: #cf711f;
+    - Shades: #cf711f; #45260a
     - Accents: 
     - Greys: #555, #333, #6f6f6f (lightest grey allowed on fdf2e9)
 
@@ -46,6 +46,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 html {
@@ -142,6 +149,7 @@ strong {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -152,6 +160,23 @@ strong {
   font-weight: 600;
 
   transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.btn-form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: flex-end;
+  padding: 1.2rem;
+  border: none;
+  font-size: 1.8rem;
+}
+
+.btn-form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .btn-full:link,
