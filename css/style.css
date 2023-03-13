@@ -571,7 +571,6 @@
   list-style: none;
   display: flex;
   gap: 2.4rem;
-  justify-content: center;
 }
 
 .social-icon {
