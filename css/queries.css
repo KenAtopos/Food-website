@@ -119,6 +119,7 @@
   /* mobile navigation */
   .btn-mobile-nav {
     display: inline-block;
+    z-index: 9999;
   }
 
   .main-nav {
